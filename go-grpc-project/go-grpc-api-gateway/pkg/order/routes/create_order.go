@@ -5,7 +5,7 @@ import (
     "net/http"
 
     "github.com/gin-gonic/gin"
-    "github.com/YOUR_USERNAME/go-grpc-api-gateway/pkg/order/pb"
+    "github.com/sahargharbi/go-grpc-api-gateway/pkg/order/pb"
 )
 
 type CreateOrderRequestBody struct {

@@ -4,10 +4,10 @@ import (
     "log"
 
     "github.com/gin-gonic/gin"
-    "github.com/YOUR_USERNAME/go-grpc-api-gateway/pkg/auth"
-    "github.com/YOUR_USERNAME/go-grpc-api-gateway/pkg/config"
-    "github.com/YOUR_USERNAME/go-grpc-api-gateway/pkg/order"
-    "github.com/YOUR_USERNAME/go-grpc-api-gateway/pkg/product"
+    "github.com/sahargharbi/go-grpc-api-gateway/pkg/auth"
+    "github.com/sahargharbi/go-grpc-api-gateway/pkg/config"
+    "github.com/sahargharbi/go-grpc-api-gateway/pkg/order"
+    "github.com/sahargharbi/go-grpc-api-gateway/pkg/product"
 )
 
 func main() {
@@ -24,4 +24,4 @@ func main() {
     order.RegisterRoutes(r, &c, &authSvc)
 
     r.Run(c.Port)
-}
+} 
